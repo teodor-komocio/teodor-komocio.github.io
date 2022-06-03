@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>logo</title>
+  <g>
+    <rect width="1920" height="1080"/>
+    <g>
+      <rect x="592.061" y="164.487" width="767.532" height="767.532" fill="none" stroke="#121212" stroke-miterlimit="10" stroke-width="15"/>
+      <path d="M975.7,738.833,750.622,513.758l-80.28,80.28L624.51,548.205,839.076,333.639l45.832,45.833-79.7,79.7,225.075,225.075Z" transform="translate(-0.003 -0.003)" fill="none" stroke="#121212" stroke-miterlimit="10" stroke-width="15"/>
+      <path d="M921.376,684.136l225.075-225.075-80.28-80.28L1112,332.949,1326.57,547.514l-45.833,45.833-79.7-79.7L975.966,738.726Z" transform="translate(-0.003 -0.003)" fill="none" stroke="#121212" stroke-miterlimit="10" stroke-width="15"/>
+    </g>
+  </g>
+</svg>
