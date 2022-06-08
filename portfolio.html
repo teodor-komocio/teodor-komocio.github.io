@@ -26,11 +26,9 @@
     </div>
   </header>
   <body style="background-color: white">
-    <div id="container" class="w3-content w3-display-container">
-      <div class="w3-center w3-section w3-text-white w3-display-middle" style="width:100%">
-        <div id="arrowleft" class="w3-left w3-padding-left w3-hover-text-orange w3-display-left" onclick="plusDivs(-1)">&#10094;</div>
-        <div id="arrowright" class="w3-right w3-padding-right w3-hover-text-orange w3-display-right" onclick="plusDivs(1)">&#10095;</div>
-      </div>
+    <div id="container" class="w3-container w3-display-container">
+      <div id="arrowleft" class="w3-left w3-padding-left w3-hover-text-white w3-display-left" onclick="plusDivs(-1)">&#10094;</div>
+      <div id="arrowright" class="w3-right w3-padding-right w3-hover-text-white w3-display-right" onclick="plusDivs(1)">&#10095;</div>
       <div class="dots w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
         <span class="w3-badge demo w3-border w3-border-black w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
         <span class="w3-badge demo w3-border w3-border-black w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
@@ -38,14 +36,19 @@
         <span class="w3-badge demo w3-border w3-border-black w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
         <span class="w3-badge demo w3-border w3-border-black w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
       </div>
-      <div>
-        <video class="mySlides" autoplay="autoplay" loop="loop" src="media/totem.mp4"></video>
-        <video class="mySlides" autoplay="autoplay" loop="loop" src="media/typetest.mp4"></video>
-        <img class="mySlides" src="media/typeface1.png">
-        <img class="mySlides" src="media/type1.png">
-        <img class="mySlides" src="media/wire_totem.jpg">
-      </div>
+      <a id="button" class="btn w3-display-bottommiddle" href="#">SEE MORE</a>
+      <video class="mySlides video1 w3-container" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="media/totem.mp4" type="video/mp4">
+      </video>
+      <a id="button2" class="btn w3-display-bottommiddle" href="#">+ ADD FONT</a>
+      <video class="mySlides video" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="media/typetest.mp4" type="video/mp4">
+      </video>
+      <img class="mySlides" src="media/meandr.png">
+      <img class="mySlides" src="media/test.png">
+      <img class="mySlides" src="media/jazzdock.png">
     </div>
-    <script src="app.js"></script>
-  </body>
+  </div>
+  <script src="app.js"></script>
+</body>
 </html>
