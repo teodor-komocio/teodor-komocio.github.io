@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1086.2 245.63">
+  <defs>
+    <style>
+      .b {
+        fill: none;
+        stroke: #b7b7a3;
+        stroke-miterlimit: 10;
+        stroke-width: 30px;
+      }
+    </style>
+  </defs>
+  <path class="b" d="M466.26,173.67C211.02,168.05,15,134.86,15,94.75,15,50.71,251.44,15,543.1,15s528.1,35.71,528.1,79.75c0,40.1-196.01,73.29-451.24,78.91"/>
+  <polyline class="b" points="423.52 112.31 484.88 173.67 423.52 235.03"/>
+</svg>

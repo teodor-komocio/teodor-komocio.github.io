@@ -1,0 +1,417 @@
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  svg:not(:root) {
+    overflow: visible;
+  }
+  
+  
+  
+  .header {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    justify-content: space-between;
+    text-align: center;
+    background-color: transparent;
+    z-index: 100;
+    mix-blend-mode: difference;
+    background-color: transparent;
+  }
+  
+  .header a {
+    transition: 0.3s;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 2px;
+    width: 20%;
+  }
+  
+  .header a:hover {
+    transition: 0.3s;
+  }
+  
+  .contact-hover {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+
+
+  .contact-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom;
+    transition: transform .3s ease-out;
+  }
+  
+  .contact-hover:hover::after {
+    transform: scaleX(.35);
+    transform-origin: bottom;
+  }
+  
+  .komocio-hover {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  .komocio-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom;
+    transition: transform .3s ease-out;
+  }
+  
+  .komocio-hover:hover::after {
+    transform: scaleX(.35);
+    transform-origin: bottom;
+  }
+  
+  .behance-hover {
+    position: relative;
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.75em;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+  }
+  
+  .behance-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom;
+    transition: transform .3s ease-out;
+  }
+  
+  .behance-hover:hover::after {
+    transform: scaleX(.35);
+    transform-origin: bottom;
+  }
+
+
+
+
+
+
+
+
+.contact-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-contact {
+    background-color: #ffffff;
+    width: 50%;
+    float: left;
+    height: 100vh;
+    
+}
+
+.right-contact {
+    background-color: black;
+    width: 50%;
+    float: right;
+    height: 100vh;
+}
+
+.right-container {
+    width: 65%;
+    margin-left: 5%;
+    margin-top: 12%;
+}
+
+.form-left {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.head-contact-left {
+    background-color: transparent;
+    font-size: 5em;
+    margin-left: 5%;
+    color: black; 
+    user-select: none;
+}
+
+.head-icon-contact-left {
+    background-color: transparent;
+    margin-top: 12%;
+    height: .75em;
+    filter: invert(1);
+}
+
+.right-head-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.head-contact-right {
+    background-color: transparent;
+    font-size: 5em;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: white;
+    line-height: 90%;
+}
+
+.underscore {
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 100px;
+}
+
+.null-fullname {
+    font-size: 1em;
+    color: white;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.null-links-container {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.null-links {
+    font-size: 1.5em;
+    color: white;
+    margin-left: 5%;
+    text-decoration: underline; 
+}
+
+
+
+.Name {
+    background-color: transparent;
+    border: black 2px solid;
+    border-radius: 10px;
+    height: 1.5em;
+    font-size: 1.3em;
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 50%;
+    transition: .5s ease;
+}
+
+.Name:hover {
+    width: 65%;
+    transition: .5s ease;
+    font-size: 1.3em;
+}
+
+.Name:focus {
+    width: 65%;
+    transition: .5s ease;
+    font-size: 1.3em;
+}
+
+.Email {
+    background-color: transparent;
+    border: black 2px solid;
+    border-radius: 10px;
+    height: 1.5em;
+    font-size: 1.3em;
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 50%;
+    transition: .5s ease;
+}
+
+.Email:hover {
+    width: 65%;
+    transition: .5s ease;
+    font-size: 1.3em;
+}
+
+.Email:focus {
+    width: 65%;
+    transition: .5s ease;
+    font-size: 1.3em;
+}
+
+.Input {
+    background-color: transparent;
+    border: black 2px solid;
+    border-radius: 10px;
+    font-size: 1.3em;
+    margin-left: 5%;
+    margin-top: 4%;
+    width: 50%;
+    transition: .5s ease;
+    height: 240px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 50%;
+    max-height: 240px;
+    min-width: 50%;
+    min-height: 240px;
+}
+
+.Input:hover {
+    width: 65%;
+    max-width: 65%;
+    min-width: 65%;
+    transition: .5s ease;
+    font-size: 1.3em;
+}
+
+.Input:focus {
+    width: 65%;
+    font-size: 1.3em;
+}
+
+.extrainfo {
+    background-color: transparent;
+    margin-left: 5.5%;
+    margin-top: 2px;
+
+}
+
+.extrainfo a {
+    background-color: transparent;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    user-select: none;
+    font-style: italic;
+}
+
+.button-container-left {
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+    background-color: transparent;
+    padding: 1px 1px 1px 1px;
+    margin-top: 5%;
+
+}
+
+
+.button-left {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 60px; 
+    transition: .5s ease;
+    border: white 2px solid;
+
+}
+
+.button-left:hover {
+    filter: invert(1);
+    border: white 2px solid;
+    transition: .5s ease;
+}
+
+.icon-button-left {
+    background-color: transparent;
+}
+
+
+/*NULL*/
+
+.button-right {
+    background-color: black;
+    width: 230px;
+    height: 110px;
+    font-size: 2em;
+    color: white;
+    border: none;
+
+    transition: .2s ease-in-out;
+    border: white 4px solid;
+}
+
+
+.button-right:hover {
+    background-color: white;
+    color:black;
+    border: white 4px solid;
+    transition: .2s ease-in-out;
+}
+
+
+.Name-right {
+    background-color: transparent;
+    border: black 4px solid;
+    font-size: 1.6em;
+    height: 2em;
+    
+    width: 100%;
+    transition: .5s ease;
+    filter: invert(1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.Email-right {
+    background-color: transparent;
+    border: black 4px solid;
+    height: 2em;
+    font-size: 1.6em;
+    margin-top: 2%;
+    width: 100%;
+    transition: .5s ease;
+    filter: invert(1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Input-right {
+    background-color: transparent;
+    border: black 4px solid;
+    font-size: 1.6em;
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+    width: 100%;
+    height: 10em;
+    max-width: 100%;
+    max-height: 10em;
+    min-width: 100%;
+    min-height: 10em;
+    transition: .5s ease;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: invert(1)
+}
